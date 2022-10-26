@@ -119,3 +119,56 @@ web2-6 	속성을 스스로 알아내기
 		font-size:60px;		- Text size property
 		text-align:center;	- Text align property
 	}
+
+web2-7 CSS 선택자의 기본
+
+	class 라는 속성을 주고 각 클래스에 해당하는 값만 수정
+	<style>
+		내부의 클래스 이름앞에 .을 붙이면 선택자 내부 클래스가 .이름인 선택자를 지정하게 된다.
+
+		.saw{
+			color:red;
+		}
+		.active{
+
+		}
+	</style>
+	class = "saw"
+	class = "saw active"
+	-> 여러개의 값이 들어올 수 있다., 순서에 영향을 받음
+
+	#active 라고 입력하면 id="active" 값을 가진 항목이 바뀌어짐, 스타일 내부  순서에 상관이 없다
+
+	* id 선택자 우선순위 > class 선택자 > 태그 선택자
+	- id 값은 한번만 등장해야 함
+
+	css selector
+
+web2-8 박스 모델
+
+	선 등 경계선을 표시하기위해 박스 모델을 사용함
+	<style> 태그에 border-width,color,style or border: ;
+	자신의 할당된 크기에 따라 달라짐 (block level element, inline element)
+	element level을 바꾸고 싶으면 display:inline/block 처럼 입력
+
+web2-9 박스 모델 써먹기
+
+	border-bottom등 방향 지정해서 설정 가능
+	개발자 도구에서 확인 가능 F12
+
+web2-10 그리드 소개
+
+	디자인을 위한 태그 <div> -> block level element <span> -> inline element
+
+	디자인의 목적을 위해 <div 태그로 감싼다>
+	<div id="grid">
+		<div>aa</div>
+		<div>bb</div>
+
+	<style> 태그 수정
+		#grid {
+			display:grid;
+			grid-template-columns: 150px 1fr;
+		}
+
+web2-11 그리드 써먹기
