@@ -172,3 +172,43 @@ web2-10 그리드 소개
 		}
 
 web2-11 그리드 써먹기
+	
+	<div id="s"> 등으로 id입력 가능, style태그에서 #grid #article등 포함관계에 대해 입력도 가능
+
+web2-12 미디어 쿼리 - 반응형 디자인
+
+	- 화면의 크기에 따라 웹페이지가 반응하도록
+	<style>
+		div {
+			border:10px solid green;
+			font-size:60px;
+		}
+		[screen width > 800px]
+		@media(min-width:800px) {
+			div {
+				display:none;
+			}
+		}
+	</style>
+
+web2-13 미디어 쿼리 써먹기
+
+	@media(min-width:800px) {
+			div {
+				display:none;
+			}
+		}
+
+web2-14 CSS 코드의 재사용
+	
+	style.css 라는 파일을 만들어서 한번에 관리 <link>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	</head>
+
+	개발자 도구 - 네트워크
+	캐싱이 있기 때문에 .css 파일을 캐싱할 수 있게 된다면 더 빠르게 보여주고 트래픽이 감소함
+
+web2-15 수업을 마치며
+
+	선택자와 속성에 대해 많이 알고 있으면 좋다. CSS에서 가장 중요
